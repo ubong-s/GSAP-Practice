@@ -11,7 +11,7 @@ export default function CreativeProcess() {
     const ctx = gsap.context(() => {
       timeline = gsap
         .timeline({ defaults: { opacity: 0, ease: 'back' } })
-        .from(container.current, { ease: 'linear' })
+        .from(container.current, { ease: 'linear', autoAlpha: 0 })
         .from('h1', { x: 80 })
         .from('h2', { x: -80 })
         .from('p', { y: 30 })
